@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="normal">#EEEEEEEE</color>
+    <color name="pressed">#EEFF2200</color>
+    <color name="focused">#EEAAAAAA</color>
+    <color name="lighter_gray">#AAAAAA</color>
+    <color name="light_gray">#A9A9A9</color>
+    <color name="gray">#EE888888</color>
+    <color name="white">#EEFFFFFF</color>
+    <color name="background">#FFEEEEEE</color>
+    <color name="divider_color">#DDDDDD</color>
+    <color name="scroll_char_back">#7010aaff</color>
+    <color name="ash">#8b8989</color>
+    <color name="starting_ash">#979797</color>
+    <color name="ending_ash">#6A6A6A</color>
+    <color name="fixed_ash">#666666</color>
+    <color name="starting_header">#808080</color>
+    <color name="ending_header">#414141</color>
+    <color name="fixed_header">#333333</color>
+    <color name="starting_accounts_bg">#474747</color>
+    <color name="ending_accounts_bg">#333333</color>
+    <color name="bg_ash">#7f7f7f</color>
+    <color name="deep_ash">#434343</color>
+    <color name="blue">#8997BD</color>
+    <color name="yellow">#FAC30A</color>
+    <color name="starting_accounts">#818181</color>
+    <color name="ending_accounts">#363636</color>
+    <color name="starting_calllog">#4a4a4a</color>
+    <color name="middle_calllog">#333333</color>
+    <color name="ending_calllog">#323232</color>
+    <color name="starting_callframe_first">#7D7D7D</color>
+    <color name="ending_callframe_first">#333333</color>
+    <color name="starting_callframe_second">#595959</color>
+    <color name="l_blue">#909BAA</color>
+    <color name="d_blue">#6D7B92</color>
+    <color name="selector_pressed_color">#283842</color>
+    <color name="sidebar_text_color">#475a62</color>
+    <color name="tab_text_normal">#B1BFCA</color>
+    <color name="contact_back1">#887C61</color>
+    <color name="contact_back2">#A4806E</color>
+    <color name="contact_back3">#545C46</color>
+    <color name="contact_back4">#6B8988</color>
+    <color name="horizontal_bar_color">#33B5E5</color>
+    <color name="vertical_bar_color">#ECEDEE</color>
+
+    <drawable name="selected_item_blue">#24738F</drawable>
+    <drawable name="transparent_text_background_drwable">#7000</drawable>
+
+</resources>

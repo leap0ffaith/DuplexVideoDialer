@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="." destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="sufian.video.stream.packetizer,sufian.video.stream,sufian.video.server.pipe,sufian.video.server" source="1.6" sourcefiles="src/sufian/video/duplex/StartActivity.java,src/sufian/video/duplex/DuplexVideoActivity.java" sourcepath="gen;src" splitindex="true" use="true" version="true">
+            <link href="file:/G:/android-sdk-windows/docs/reference"/>
+            <link href="file:/G:/Android/Duplex%20Video/doc/"/>
+        </javadoc>
+    </target>
+</project>

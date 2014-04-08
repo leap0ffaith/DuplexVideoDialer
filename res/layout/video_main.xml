@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF777777"
+    android:orientation="horizontal" >
+
+    <SurfaceView
+        android:id="@+id/videoPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+    
+    <com.revesoft.itelmobiledialer.customview.MySurfaceView
+                android:id="@+id/cameraPreview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_alignRight="@+id/view" 
+                android:layout_above="@+id/view" />
+    
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <!-- <LinearLayout
+            android:id="@+id/lLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal" >
+
+            <com.revesoft.itelmobiledialer.customview.MySurfaceView
+                android:id="@+id/cameraPreview"
+                android:layout_width="320px"
+                android:layout_height="240px"
+                android:layout_gravity="bottom" />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/cameraSwitchButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundshape"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_camera_switch" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/Button02"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundshape"
+                    android:src="@drawable/ic_camera_switch">
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/switch_camera"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundshape"
+                    android:src="@drawable/ic_camera_switch" >
+                </ImageButton>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttonpad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/endcall_button_space"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/endcall_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/callframe_calloptions_red_button_back"
+                        android:gravity="center_horizontal"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/callframe_end_call"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/accept_decline_button_space"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/accept_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/callframe_calloptions_green_button_back"
+                        android:gravity="center_horizontal"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/callframe_answer"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/decline_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/callframe_calloptions_red_button_back"
+                        android:gravity="center_horizontal"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/callframe_decline"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

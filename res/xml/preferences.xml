@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="Sender Info" >
+        <CheckBoxPreference 
+            android:title="Loopback"
+            android:key="loopback"
+            android:summary="127.0.0.1" />
+
+        <EditTextPreference 
+            android:dialogTitle="Enter Target IP"
+            android:key="target_ip"
+            android:defaultValue="127.0.0.1"
+            android:title="Target IP" />
+
+        <EditTextPreference 
+            android:dialogTitle="Enter Target Port"
+            android:key="target_port"
+            android:inputType="number"
+            android:defaultValue="22222"
+            android:title="Target Port" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Receiver Info">
+        <EditTextPreference  
+            android:dialogTitle="Enter Receiving Port for RTP"
+            android:key="receive_port"
+            android:inputType="number"
+            android:defaultValue="22222"
+            android:title="RTP Receiving Port" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Sender Properties"
+        android:key="sender_properties">
+        <ListPreference
+            android:title="Encoder"
+            android:key="encoder"
+            android:entries="@array/encoder"
+            android:entryValues="@array/encoder"
+            android:defaultValue="H.264"/>
+        
+        <ListPreference
+            android:title="Resolution"
+            android:key="resolution"
+            android:entries="@array/resolution"
+            android:entryValues="@array/resolution"
+            android:defaultValue="320x240"/>
+        
+        <ListPreference
+            android:title="Frame rate"
+            android:key="framerate"
+            android:entries="@array/framerate"
+            android:entryValues="@array/framerate"
+            android:defaultValue="15 fps"/>
+        
+        <ListPreference
+            android:title="Bit rate"
+            android:key="bitrate"
+            android:entries="@array/bitrate"
+            android:entryValues="@array/bitrate"
+            android:defaultValue="128 kbps"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Receiver Properties">
+        <ListPreference 
+            android:title="Decoder"
+            android:key="decoder"
+            android:entries="@array/encoder"
+            android:entryValues="@array/encoder"
+            android:defaultValue="H.264"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

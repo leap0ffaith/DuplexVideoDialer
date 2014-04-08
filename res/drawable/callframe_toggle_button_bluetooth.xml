@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- use "@android:drawable/btn_default" to keep consistent with system -->
+    <item android:drawable="@drawable/callframe_toggle_back_green" />
+    <item android:drawable="@drawable/ic_callframe_bluetooth" />
+</layer-list>
